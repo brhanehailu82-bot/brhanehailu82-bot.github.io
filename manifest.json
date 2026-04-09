@@ -1,5 +1,22 @@
 {
-  "permissions": [ "activeTab" ],
-  "name": "https://brhanehailu82-bot.github.io",
-  "display": "standalone"
+  "name": "Личный сайт",
+  "short_name": "Сайт",
+  "description": "Который сделан на основе готового шаблона",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
