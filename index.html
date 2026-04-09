@@ -33,6 +33,23 @@
         <section>
           <h2>Вторая секция</h2>
           <p>Она тоже обо мне</p>
+			    
+<button id="init_sub">Подписаться на уведомления</button> // Кнопка подписки
+
+// ..Основная часть кода..
+
+<script>
+	document.getElementById('init_sub').addEventListener('click', function() { // По клику на кнопку..
+	try {
+		const akPush = new AKPush();
+		akPush.initSubscription() // ..показать форму подписки
+		}
+	catch (e) {
+		console.log(e); // ..или записать ошибку в консоль браузера
+		}
+	});
+</script>
+
         </section>
         <section>
           <h2>И третья</h2>
@@ -45,18 +62,7 @@
     </footer>
     <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
         
-<button id="init_sub">Подписаться на уведомления</button> // Кнопка подписки
-<script>
-	document.getElementById('init_sub').addEventListener('click', function() { // По клику на кнопку..
-	try {
-		const akPush = new AKPush();
-		akPush.initSubscription() // ..показать форму подписки
-		}
-	catch (e) {
-		console.log(e); // ..или записать ошибку в консоль браузера
-		}
-	});
-</script>
+
 
   </body>
 </html>
