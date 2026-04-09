@@ -1,0 +1,1 @@
+importScripts('https://pxl.altcraft.ilya-strokov.lan:80/service-worker.js?id=MXw0');
